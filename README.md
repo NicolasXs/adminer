@@ -28,7 +28,3 @@ adminer/
 └── adminer-plugins/
     └── copy-add-column.php # Copy SQL plugin
 ```
-
-## 📝 License
-
-MIT
