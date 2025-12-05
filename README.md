@@ -9,8 +9,7 @@ Plugin for [Adminer](https://www.adminer.org/) that adds a button next to each c
 - Useful for quickly replicating column structures between tables
 
 ## 📸 Demo
-
-<img src="https://github.com/user-attachments/assets/fb0c9809-d81e-40e1-a8ef-8023cf9b44ad" alt="Screen recording 2025-12-05 15-47-54" width="800">
+![Gravação-de-tela-de-2025-12-05-16-01-15](https://github.com/user-attachments/assets/20d8c863-023a-4971-84b1-94019d028b05)
 
 ## 🚀 Installation
 
