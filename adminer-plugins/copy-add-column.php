@@ -26,10 +26,10 @@ class AdminerCopyAddColumn
     echo "<div class='scrollable'>\n";
     echo "<table class='nowrap odds'>\n";
     echo "<thead><tr>";
-    echo "<th>" . lang(48) . "</th>";
-    echo "<td>" . lang(49) . "</td>";
+    echo "<th>" . lang('Column') . "</th>";
+    echo "<td>" . lang('Type') . "</td>";
     if (support("comment")) {
-      echo "<td>" . lang(50) . "</td>";
+      echo "<td>" . lang('Comment') . "</td>";
     }
     echo "<td>SQL</td>";
     echo "</tr></thead>\n";
@@ -46,7 +46,7 @@ class AdminerCopyAddColumn
 
       echo "<td>";
       echo "<span title='" . $collation . "'>";
-      if (in_array($type, (array) $structuredTypes[lang(6)])) {
+      if (in_array($type, (array) $structuredTypes[lang('User types')])) {
         echo "<a href='" . h(ME . 'type=' . urlencode($type)) . "'>" . $type . "</a>";
       } else {
         echo $type;
@@ -63,13 +63,13 @@ class AdminerCopyAddColumn
 
       // AUTO_INCREMENT
       if ($field["auto_increment"]) {
-        echo " <i>" . lang(51) . "</i>";
+        echo " <i>" . lang('Auto Increment') . "</i>";
       }
 
       // DEFAULT
       $default = h($field["default"]);
       if (isset($field["default"])) {
-        echo " <span title='" . lang(52) . "'>[<b>";
+        echo " <span title='" . lang('Default value') . "'>[<b>";
         if ($field["generated"]) {
           echo "<code class='jush-" . JUSH . "'>" . $default . "</code>";
         } else {
