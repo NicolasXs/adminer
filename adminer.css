@@ -114,6 +114,45 @@
   --ui-input-p-h: 15px;
 }
 
+/* Scrollbar global styling */
+::-webkit-scrollbar {
+  background: var(--color-background);
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-shade);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: var(--color-background-shade);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-highlight-2);
+  border-radius: 5px;
+  border: 2px solid var(--color-background-shade);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color-background-shade);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-highlight-2) var(--color-background-shade);
+}
+
 html,
 body {
   height: 100%;
